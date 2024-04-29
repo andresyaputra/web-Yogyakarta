@@ -1,0 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    font-family: Arial, sans-serif,inherit;
+    scroll-behavior: smooth;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    text-align: center;   
+    width: 100%;
+    height: 50PX;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: medium;
+}
+
+main {  
+    display: flex;  
+    flex-direction: column;
+    align-items: center; 
+}
+
+#sejarah {
+    display: flex;
+}
+
+.sejarah-img {
+    flex: 1;
+    width: 50%;
+}
+
+.sejarah-img img {
+    width: 100%;
+}
+
+
+.sejarah-des {
+    flex: 1;
+    width: 50%;
+    background-color: hsl(64, 97%, 54%);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.sejarah-des h1 {
+    font-family: 'Inter', sans-serif; /* Menggunakan font Inter */
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 90px;
+    
+}
+
+.sejarah-des p {
+    font-family: 'Inter', sans-serif; 
+    font-weight: medium;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.sejarah-des button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px ;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 90px;
+    width: 120px;
+    margin-top: 5px;
+}
+
+.sejarah-des button a {
+    color: inherit;
+}
+
+#wisata {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 126px;
+    font-family: 'Adlam Display', sans-serif;
+    margin-bottom: 165px;
+    
+}
+
+.wisata-ul {
+    display: flex;
+    gap: 1rem;
+    padding: 0; /* Hapus padding */
+    margin: 0; /* Hapus margin */
+    list-style-type: none; /* Menghilangkan titik pada elemen li */
+}
+
+.wisata-ul li img {
+    width: 300px;
+    height: 280px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: opacity 0.3s ease-in-out; /* Efek transisi untuk perubahan opacity */
+}
+.wisata-ul li img:hover {
+    opacity: 0.7; /* Mengurangi opacity menjadi 0.7 ketika dihover */
+}
+
+.wisata-ul li img:hover {
+    opacity: 0.7; /* Mengurangi opacity menjadi 0.7 ketika dihover */
+}
+
+
+.wisata-ul li h1 {
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.164);
+    height: 50px;
+    line-height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -4px;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 530;
+    font-size: 15px;
+}
+
+.wisatah1 {
+    font-family: 'Adlam Display', sans-serif;
+    font-weight: bold;
+    color: hsl(64, 97%, 54%);
+    font-size: 40px;
+}
+
+#makanan {
+    text-align: center;
+    display: flex;
+    margin-top: 100px;
+    font-family: 'Adlam Display', sans-serif;
+    margin-left: 160px;
+    margin-right: 160px;
+    align-items: center;
+    justify-content: center;
+}
+.makanan-img {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.makanan-img img {      
+    width: 450px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    justify-content: flex-end;
+}
+.makanan-des{
+    flex: 1;
+    width: 50%;
+    display: flex; 
+    flex-direction: column; 
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.makanan-des button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px ;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 120px;
+    margin-top: 5px;
+}
+
+.makanan-des h1 {
+    font-family: 'Inter', sans-serif; /* Menggunakan font Inter */  
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 170px;
+}
+.makanan-des button a {
+    color: inherit;
+}
+
+.makanan-des p {
+    font-family: 'Inter', sans-serif; 
+    font-weight: medium;
+    font-size: 18px;
+    margin-left: px;
+    margin-right: 90px;
+    text-align: left;
+}
+
+.footer {
+    background-color: #edfe00;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
